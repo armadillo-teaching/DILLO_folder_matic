@@ -19,7 +19,8 @@ X:\\ (Root USB)
 │   ├── Geany\\            (Editor Geany)  
 │   ├── msys64\\           (Ambiente MSYS2)  
 │   ├── OpenOCD\\          (Server di Debug)  
-│   └── Ozone\\            (Debugger SEGGER)  
+│   ├── Ozone\\            (Debugger SEGGER)  
+│   └── GD32_ISP_CLI\\     (Shell Commands GIGADEVICE)
 ├── Configs\\  
 │   ├── Geany\_Config\\     (Impostazioni Geany)  
 │   ├── MSYS2\_Home\\       (Cartella Home condivisa)  
@@ -47,6 +48,7 @@ Prima di usare i launcher, devi scaricare ed estrarre i software nelle rispettiv
 3. **Inizializzazione (Solo la prima volta):** Avvia Apps\\msys64\\msys2\_shell.cmd, poi digita:  
    pacman \-Syu  
    pacman \-S make nano
+   pacman \-S mingw-w64-ucrt-x86_64-putty
 
 4. Chiudi la finestra.
 
