@@ -20,6 +20,7 @@ X:\\ (Root USB)
 │   ├── msys64\\           (Ambiente MSYS2)  
 │   ├── OpenOCD\\          (Server di Debug)  
 │   ├── Ozone\\            (Debugger SEGGER)  
+│   ├── SimplySerial\\     (Simple Uart communication consolle)  
 │   └── GD32_ISP_CLI\\     (Shell Commands GIGADEVICE)
 ├── Configs\\  
 │   ├── Geany\_Config\\     (Impostazioni Geany)  
@@ -29,6 +30,7 @@ X:\\ (Root USB)
 ├── Lancia\_EmbeddedBuilder.bat  
 ├── Lancia\_Geany.bat  
 ├── Lancia\_MSYS2.bat  
+├── Lancia\_Cmd.bat  
 └── Lancia\_Ozone.bat
 
 ## **3\. Popolamento delle Applicazioni (Fase Manuale)**
@@ -73,7 +75,13 @@ Prima di usare i launcher, devi scaricare ed estrarre i software nelle rispettiv
 2. Puoi estrarre i file dall'installer direttamente usando **7-Zip** e copiarli in Apps\\Ozone. In alternativa, installalo temporaneamente sul tuo PC host e copia il contenuto della cartella C:\\Program Files\\SEGGER\\Ozone dentro Apps\\Ozone.  
 3. Assicurati di avere l'eseguibile in Apps\\Ozone\\Ozone.exe.
 
-### **G. Gigadevice Command Line Tools (Apps\\GD32_ISP_CLI)**
+### **G. SimplySerial (Apps\\SimplySerial)**
+
+1. Scarica il pacchetto Windows di 'SimplySerial_x.x.x_standalone.zip' dal sito Github (**https://github.com/fasteddy516/SimplySerial/releases**).  
+2. Puoi estrarre i file dal pacchetto usando **7-Zip** e copiarli in Apps\\SimplySerial.  
+3. Assicurati di avere l'eseguibile in Apps\\SimplySerial\\ss.exe.
+
+### **H. Gigadevice Command Line Tools (Apps\\GD32_ISP_CLI)**
 1. Scarica il pacchetto **GD32_ISP_CLI(Windows)_V5.1.0.39034.7z** dal sito ufficiale Gigadevice
 2. Puoi estrarre i file dal pacchetto usando **7-Zip**
 3. Assicurati di avere i comandi batch e l'eseguibile "GD32_ISP_CLI.exe" in Apps\\GD32_ISP_CLI
@@ -83,6 +91,7 @@ Prima di usare i launcher, devi scaricare ed estrarre i software nelle rispettiv
 Usa **sempre** i file .bat presenti nella root per avviare i programmi in modo che siano portatili e non "sporchino" il PC:
 
 * **Lancia\_MSYS2.bat**: Apre una console MINGW64. Le variabili gcc, gdb, openocd e geany sono disponibili da qualsiasi posizione.  
+* **Lancia\_Cmd.bat**: Apre una console CMD di Windows. Le variabili gcc, gdb, openocd e geany sono disponibili da qualsiasi posizione.  
 * **Lancia\_Geany.bat**: Apre Geany con configurazione in Configs\\Geany\_Config. Dai tool di build vedrà nativamente GCC, GDB, Make e OpenOCD.  
 * **Lancia\_EmbeddedBuilder.bat**: Avvia l'IDE Eclipse-based forzando il Workspace sulla chiavetta e ignorando %APPDATA%.  
 * **Lancia\_Ozone.bat**: Avvia il debugger Ozone. Questo script intercetta e sovrascrive le variabili Windows (USERPROFILE, APPDATA, LOCALAPPDATA) facendole puntare a Configs\\Ozone\_Config. Così facendo, le licenze, i layout di visualizzazione e i recent project file J-Link verranno salvati tutti sulla chiavetta\!
