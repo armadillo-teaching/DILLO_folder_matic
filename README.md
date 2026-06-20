@@ -91,7 +91,7 @@ Prima di usare i launcher, devi scaricare ed estrarre i software nelle rispettiv
 Usa **sempre** i file .bat presenti nella root per avviare i programmi in modo che siano portatili e non "sporchino" il PC:
 
 * **Lancia\_MSYS2.bat**: Apre una console MINGW64. Le applicazioni gcc, gdb, openocd, simplyserial e geany sono disponibili da qualsiasi posizione.  
-* **Lancia\_Cmd.bat**: Apre una console CMD di Windows. Le variabili gcc, gdb, openocd, simplyserial e geany sono disponibili da qualsiasi posizione.  
+* **Lancia\_Cmd.bat**: Apre una console CMD di Windows. Le applicazioni gcc, gdb, openocd, simplyserial e geany sono disponibili da qualsiasi posizione.  
 * **Lancia\_Geany.bat**: Apre Geany con configurazione in Configs\\Geany\_Config. Dai tool di build vedrà nativamente GCC, GDB, Make e OpenOCD.  
 * **Lancia\_EmbeddedBuilder.bat**: Avvia l'IDE Eclipse-based forzando il Workspace sulla chiavetta e ignorando %APPDATA%.  
 * **Lancia\_Ozone.bat**: Avvia il debugger Ozone. Questo script intercetta e sovrascrive le variabili Windows (USERPROFILE, APPDATA, LOCALAPPDATA) facendole puntare a Configs\\Ozone\_Config. Così facendo, le licenze, i layout di visualizzazione e i recent project file J-Link verranno salvati tutti sulla chiavetta\!
